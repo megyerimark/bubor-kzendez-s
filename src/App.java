@@ -1,7 +1,7 @@
 public class App {
 
 
-    public static void  bubiRendez(int [] szamok){
+    public static void  bubiRendez(int[] szamok){
         for (int i =  szamok.length-1 ; i < szamok.length; i++) {
             for (int j = 0; j < i; j++) {
                 if(szamok[j]>szamok[j+1]){
@@ -15,6 +15,16 @@ public class App {
         }
 
     }
+
+
+public static void kiirTomb(int[] szamok){
+    for (int i : szamok){
+        System.out.print(i +" ");
+    }
+System.out.println();
+}
+
+
 
 
 
