@@ -2,12 +2,13 @@ public class App {
 
 
     public static void  bubiRendez(int[] szamok){
-        for (int i =  szamok.length-1 ; i >0; i--) {
+        int[]uj_szamok=szamok;
+        for (int i =  uj_szamok.length-1 ; i >0; i--) {
             for (int j = 0; j < i; j++) {
-                if(szamok[j]>szamok[j+1]){
+                if(uj_szamok[j]>szamok[j+1]){
                     int csere =szamok[j];
-                    szamok[j] = szamok[j+1];
-                    szamok[j+1]= csere;
+                    uj_szamok[j] = szamok[j+1];
+                    uj_szamok[j+1]= csere;
                 }
                 
             }
