@@ -1,7 +1,7 @@
 public class App {
 
 
-    public static void  bubiRendez(int[] szamok){
+    public static int[] bubiRendez(int[] szamok){
         int[]uj_szamok=szamok;
         for (int i =  uj_szamok.length-1 ; i >0; i--) {
             for (int j = 0; j < i; j++) {
@@ -14,6 +14,7 @@ public class App {
             }
             
         }
+        return uj_szamok;
 
     }
 
@@ -32,8 +33,11 @@ System.out.println();
 
     public static void main(String[] args) throws Exception {
         System.out.println("Buborék rendezés");
+        System.out.println("-----------------");
+        System.out.println("Megyeri Márk Máté");
+        System.out.println("-----------------");
         int[] szamok={39,25,12,48,27,38};
-        bubiRendez(szamok);
-        kiirTomb(szamok);
+       int[] uj_tomb = bubiRendez(szamok.clone());
+        kiirTomb(uj_tomb);
     }
 }
